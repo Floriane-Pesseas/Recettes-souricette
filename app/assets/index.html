@@ -3,11 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webpack</title>
+  <title>Les petites recettes de Souricette</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1>Hello Webpack!</h1>
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="header__title">Les petites recettes de Souricette</h1>
+      <nav class="header__navbar">
+        <a href="#" class="header__nav-link">Recettes végétariennes</a>
+        <a href="#" class="header__nav-link">Recettes végétaliennes</a>
+        <a href="#" class="header__nav-link">Recettes sans gluten</a>
+        <a href="#" class="header__nav-link">Proposez vos recettes</a>
+      </nav>
+      <button class="header__login__button">Mon compte</button>
+    </header>
+    <main class="main">
+      <section class="main__articles__first">
+        <h2 class="main__articles__first__title">La recette du moment</h2>
+        <article class="main__articles__first__content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+            soluta odit itaque amet animi deserunt quisquam tempora aut nobis voluptas?
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <form class="contact-form">
+        <h3 class="contact-form__title">Formulaire de contact</h3>
+        <input type="text" class="contact-form__input" placeholder="Prénom NOM">
+        <input type="text" class="contact-form__input" placeholder="Votre Email">
+        <input type="text" class="contact-form__input" placeholder="Votre message">
+        <button class="contact-form__button"><a href="#">Envoyer</a></button>
+      </form>
+      <div class="footer__newsletter">
+        <div class="social-nav">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+        </div>
+        <div class="links">
+          <ul class="links__list">
+            <li class="links__link"><a href="#">Newsletter</a></li>
+            <li class="links__legal_mentions"><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
   <script src="js/app.js"></script>
 </body>
 </html>
