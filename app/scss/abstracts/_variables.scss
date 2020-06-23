@@ -5,12 +5,18 @@ $beige: #d2b48c;
 
 //Fonts family
 $title-font: 'Cookie';
-$normal-font: 'arial';
+$normal-font: 'Caudex', serif;
 
 //Fonts size
 $normal-font-size: 15px;
 $medium-font-size: 18px;
 $large-font-size: 22px; 
-$extra-large-font-size: 28px;
+$extra-large-font-size: 30px;
 
 //Breakpoints
+$breakpoint-motorola-phone: 360px;
+$breakpoint-iphone-medium: 375px;
+$breakpoint-iphone-large: 410px;
+$breakpoint-medium-tab: 768px;
+$breakpoint-large-tab: 1024px;
+$breakpoint-desktop: 1200px;
