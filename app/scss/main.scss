@@ -1,17 +1,31 @@
 @charset 'utf-8';
 
-// 1. Abstracts
+// Abstracts
 @import 
 'abstracts/variables';
-// 2. Base
+
+//Inclusions des dépendances
+// ~ est un raccourci vers le répertoire "node_modules/"
+//@import 
+//'~font-awesome/scss/font-awesome';
+
+// Base
 @import 
 'base/reset',
 'base/typography',
 'base/base';
-// 4. Layout
+
+// Layout
 @import
 'layout/header',
 'layout/main',
 'layout/footer';
 
-// 5. Components
+// Components
+@import
+'components/header_img',
+'components/header_login_button',
+'components/header_navbar';
+
+
+
