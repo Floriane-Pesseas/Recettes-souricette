@@ -1,7 +1,32 @@
 var app = {
+  
   init: function() {
     console.log('init');
-  }
-};
+    app.initEventListener();
+    
+  },
+  // All selct and Events Listener
+  initEventListener:function() {
+    let burgerMenuOpenButton = document.querySelector('.open-menu');
+    let burgerMenuCloseButton = document.querySelector('.close-menu');
+    burgerMenuOpenButton.addEventListener('click',app.handleOpenFrontPageMenu);
+    burgerMenuCloseButton.addEventListener('click', app.handleCloseFrontPageMenu);
 
-$(app.init);
+  },
+
+   // Open burger menu in header in mobile 
+   handleOpenFrontPageMenu: function () {
+    document.querySelector('.open-menu').style.visibility = "hidden";
+    document.querySelector('.wrapper').style.filter = "blur(1.5rem)";
+    document.querySelector('.header__menu').style.visibility = "visible";
+  },
+  //Close burger menu in header in mobile
+  handleCloseFrontPageMenu: function () {
+    document.querySelector('.open-menu').style.visibility = "visible";
+    document.querySelector('.wrapper').style.filter = "";
+    document.querySelector('.header__menu').style.visibility = "hidden";
+  },
+
+}
+
+document.addEventListener("DOMContentLoaded", app.init);

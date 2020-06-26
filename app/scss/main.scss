@@ -4,10 +4,9 @@
 @import 
 'abstracts/variables';
 
-//Inclusions des dépendances
-// ~ est un raccourci vers le répertoire "node_modules/"
-//@import 
-//'~font-awesome/scss/font-awesome';
+//Vendors
+$fa-font-path: '~font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome';
 
 // Base
 @import 
