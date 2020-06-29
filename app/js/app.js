@@ -17,7 +17,6 @@ var app = {
    // Open burger menu in header in mobile 
    handleOpenFrontPageMenu: function () {
     document.querySelector('.open-menu').style.visibility = "hidden";
-    //document.querySelector('.wrapper').style.filter = "blur(1.5rem)";
     document.querySelector('.header__menu').style.visibility = "visible";
   },
   //Close burger menu in header in mobile

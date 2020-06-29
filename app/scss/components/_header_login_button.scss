@@ -5,9 +5,16 @@
         margin-right: 5%;
         padding: 2%;
         height: 10%;
-        width: 30%;
+        width: 51%;
         border-radius:12px 0 12px 0;
         background-color: $light-green;
         font-family: $normal-font;
+    
     }
+
+    
+}
+
+.header__login__button:hover{
+    background-color: $cyan;
 }

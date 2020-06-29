@@ -2,6 +2,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    .ui-button {
+        width: 20%;
+    }
+
 }
 
 
@@ -61,4 +66,8 @@
 .open-menu {
     font-size: 3rem;
     color: $dark-green;    
+}
+
+li.main-nav__item:hover {
+    background-color: $green-apple;
 }
