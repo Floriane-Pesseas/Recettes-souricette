@@ -1,3 +1,10 @@
+.header__headings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
 .header__menu {    
     visibility: hidden;
     position: fixed;
@@ -13,12 +20,7 @@
     align-items: center;
     text-align: center;
 
-    .ui-button {
-        color:$dark-green;
-        font-size: 3.5rem;
-        position: relative;
-        top: -1em;
-    }
+    
     
     .main-nav{
         font-size: 2.5rem;

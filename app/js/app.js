@@ -5,7 +5,7 @@ var app = {
     app.initEventListener();
     
   },
-  // All selct and Events Listener
+  // All select and Events Listener
   initEventListener:function() {
     let burgerMenuOpenButton = document.querySelector('.open-menu');
     let burgerMenuCloseButton = document.querySelector('.close-menu');
