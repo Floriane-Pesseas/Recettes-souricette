@@ -1,73 +1,75 @@
-.header__headings {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    .ui-button {
-        width: 20%;
-    }
-
-}
-
-
+//Header menu recipes style
 .header__menu {    
     visibility: hidden;
     position: fixed;
-    //z-index: 50;
     background-color: transparentize($color: $dark-green, $amount: 0.3);     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    
-    
+//Header menu recipes style for tablet
+    @media (min-height: $breakpoint-medium-tab) {
+        visibility: visible;
+        position: absolute;
+        background-color: $pale-green;
+        
+    // Recipe's nav links   
     .main-nav{
         font-size: $large-font-size;
-
+       
+    }
+       ul {
+        @media (min-height: $breakpoint-medium-tab){
+        
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+       }
         li {
             margin: 5%;
             padding: 5%;
             background-color: $medium-green;
-            border-width: 20px;
-        
+            border-width: 20px; 
+            @media (min-height: $breakpoint-medium-tab){
+                margin: 1%;
+                padding: 2%;
+                width: 19%;
+                    }
         }
 
-        
-
         a {
-            
             font-family: $normal-font;
             font-size: $large-font-size;
             text-decoration: none;
             color: $light-green;
-            
         }
         
     }
-
+    // Button close menu style
     .fa {
         color: $light-green;
+        @media (min-height: $breakpoint-medium-tab) {
+            display: none;
+        }
+    }
+
+    .fa:hover {
+        color: $dark-green;
     }
     
 }
-
-
-.header__navbar {
-    visibility: hidden;
-    & a {
-        display: inline-block;
-        padding-right: 0.5rem;
-    }
-}
-
-
+// Button open menu style
 .open-menu {
     font-size: 3rem;
     color: $dark-green;    
-}
+    @media (min-height: $breakpoint-medium-tab) {
 
+        display: none;
+    }
+}
+// Hover on recipe's links
 li.main-nav__item:hover {
-    background-color: $green-apple;
+    background-color: $very-dark-green;
 }

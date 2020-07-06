@@ -12,4 +12,12 @@
         margin: 5%;
     }
     
+    a {
+        text-decoration: none;
+        color: $very-dark-green;
+    }
+
+    a:hover {
+        color: $medium-green;
+    }
 }

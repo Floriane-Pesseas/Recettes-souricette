@@ -2,5 +2,18 @@
     color:$dark-green;
     font-size: 3rem;
     position: relative;
-    padding: 5%;
+    margin-top: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+
+    @media (min-height: $breakpoint-iphone-large) {
+
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+  
+}
+
+.ui-button:hover {
+    color:$medium-green;
 }
