@@ -1,23 +1,47 @@
+//Section Recipe of the day
 .main__articles__first{
-    
+   
+    //Title of the recipe
     &__title {
     margin-top: 10%;
     margin-bottom: 5%;
     text-align: center;
     font-family: $normal-font;
     font-size: $medium-font-size;
-    color: $dark-green
+    color: $dark-green;
     }
 
+    //Picture of the recipe
     &__picture {
     width: 90%;
     display: block;
     margin: auto;
     }
 
+    //The details of the recipe
     p {
         margin: 5%;
         font-size: $normal-font-size;
     }
 
+//Section Recipe of the day on tablet
+@media (min-height: $breakpoint-medium-tab) {
+        margin-top: 30%;
 }
+
+}
+    //Title of the recipe on tablet
+    .main__articles__first__title {
+        @media (min-height: $breakpoint-medium-tab) {
+        font-size: $XL-font-size;
+        }
+    }
+
+    //Recipe details (text) on tablet
+    p {
+        @media (min-height: $breakpoint-medium-tab) {
+            font-size: $large-font-size !important;
+            } 
+    }
+
+   

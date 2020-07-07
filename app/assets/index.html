@@ -63,18 +63,21 @@
     <footer class="footer">
       <form class="contact-form">
         <h3 class="contact-form__title">Formulaire de contact</h3>
-        <a href="#">Formulaire de contact</a>
+        <a class="contact-link" href="#">Formulaire de contact</a>
         <div class= "contact-form__fields">
         <input type="text" class="contact-form__input" placeholder="Prénom NOM">
         <input type="text" class="contact-form__input" placeholder="Votre Email">
-        <input type="text" class="contact-form__input" placeholder="Votre message">
+        <input type="text" id ="textarea" class="contact-form__input" placeholder="Votre message">
         <button class="contact-form__button"><a href="#">Envoyer</a></button>
       </div>
       </form>
       <div class="footer__newsletter">
         <div class="links">
           <ul class="links__list">
-            <li class="links__link"><a href="#">Newsletter</a></li>
+            <li class="links__newsletter"><a class="newsletter-link"href="#">Newsletter</a></li>
+            <h3 class="newsletter__title">Newsletter</h3>
+            <input type="text" class="newsletter__input" placeholder="Votre Email">
+            <button class="newsletter__button"><a href="#">S'abonner</a></button>
             <li class="links__legal_mentions"><a href="#">Mentions légales</a></li>
           </ul>
           <div class="social-nav">
