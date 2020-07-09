@@ -1,0 +1,90 @@
+@media (min-height: $breakpoint-iphone-large) {
+
+    //Menu for mobile : button exit
+    .ui-button {
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+    
+}
+
+@media (min-height: $breakpoint-medium-tab) {
+
+//HEADER
+//Header main title with pictures    
+.header {
+        font-size: $extra-large-font-size;
+
+    //Header catch phrase
+    &__title__second {
+        font-size: $XL-font-size;
+    }
+
+    //Headings section: menu burger icon, button login and button suscribe
+    &__headings {
+        justify-content: flex-end;
+    }
+
+    // Buttons "my account" and "suscribe"
+    &__login__button {
+    width: 18%;
+    margin: 1%;
+    font-size: $medium-font-size;
+        }
+
+    //Header menu recipes style for tablet
+    &__menu {
+        visibility: visible !important;
+        position: absolute;
+        background-color: $pale-green;
+    }
+
+    //List of headings in tab
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+   }
+
+   // Button close menu style
+   .fa {
+        display: none;
+    }   
+
+    // Category of recipe in menu
+    li {
+        margin-top: 1.5%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        margin-bottom: 8%;
+        padding: 2%;
+        width: 24%;
+        height: 2em;
+    }
+
+    a {
+            text-align: center;
+            width: 10%;
+                }
+}
+
+// Button open menu style
+.open-menu {
+        display: none;
+}
+
+//MAIN
+    //Section Recipe of the day on tablet
+    .main__articles__first {
+    margin-top: 30%;
+    }
+    
+    //Title of the recipe
+    .main__articles__first__title {
+        font-size: $XL-font-size;
+    }
+    //Recipe details (text) 
+    p {
+            font-size: $large-font-size !important;   
+    }
+}

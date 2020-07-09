@@ -24,24 +24,10 @@
         font-size: $normal-font-size;
     }
 
-//Section Recipe of the day on tablet
-@media (min-height: $breakpoint-medium-tab) {
-        margin-top: 30%;
-}
+//FOOTER
+    
 
 }
-    //Title of the recipe on tablet
-    .main__articles__first__title {
-        @media (min-height: $breakpoint-medium-tab) {
-        font-size: $XL-font-size;
-        }
-    }
 
-    //Recipe details (text) on tablet
-    p {
-        @media (min-height: $breakpoint-medium-tab) {
-            font-size: $large-font-size !important;
-            } 
-    }
 
    

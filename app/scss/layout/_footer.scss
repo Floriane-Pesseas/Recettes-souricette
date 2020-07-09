@@ -4,10 +4,6 @@
     text-align: center;
     margin: 15%;
 
-    li.links__newsletter{
-        margin: 5%;
-    }
-
     .links__legal_mentions {
         margin: 5%;
     }
@@ -15,9 +11,16 @@
     a {
         text-decoration: none;
         color: $very-dark-green;
+        
     }
 
     a:hover {
         color: $medium-green;
     }
+}
+
+.links__legal_mentions {
+    @media (min-height: $breakpoint-medium-tab) {
+    margin: 5%;
+}
 }

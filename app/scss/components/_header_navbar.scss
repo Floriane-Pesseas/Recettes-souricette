@@ -1,6 +1,5 @@
 //Header menu recipes style
 .header__menu {  
-
     visibility: hidden;
     position: fixed;
     background-color: transparentize($color: $dark-green, $amount: 0.3);     
@@ -10,57 +9,26 @@
     align-items: center;
     text-align: center;
 
-//Header menu recipes style for tablet
-    @media (min-height: $breakpoint-medium-tab) {
-        visibility: visible !important;
-        position: absolute;
-        background-color: $pale-green;
-        
-        
     // Recipe's nav links   
     .main-nav{
-        font-size: $large-font-size;
-        
+        font-size: $large-font-size;    
     }
-       ul {
-        @media (min-height: $breakpoint-medium-tab){
-        
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-        }
-       }
-        
-        
-    }
+
     // Button close menu style
     .fa {
         color: $light-green;
-        @media (min-height: $breakpoint-medium-tab) {
-            display: none;
-        }
     }
 
     .fa:hover {
         color: $dark-green;
     }
 
+    // Category of recipe in menu
     li {
         margin: 5%;
         padding: 5%;
         background-color: $medium-green;
-        border-width: 20px; 
-        @media (min-height: $breakpoint-medium-tab){
-        margin-top: 1.5%;
-        margin-left: 1.5%;
-        margin-right: 1.5%;
-        margin-bottom: 8%;
-        padding: 2%;
-        width: 24%;
-        height: 2em;
-        
-        }
-       
+        border-width: 20px;   
     }
     
     a {
@@ -68,24 +36,14 @@
         font-size: $large-font-size;
         text-decoration: none;
         color: $light-green;
-        @media (min-height: $breakpoint-medium-tab){
-            text-align: center;
-            width: 10%;
-                }
     }
-    
-    
 }
+
 // Button open menu style
 .open-menu {
     font-size: 3rem;
     color: $dark-green;    
-    @media (min-height: $breakpoint-medium-tab) {
-
-        display: none;
-    }
 }
-
 
 // Hover on recipe's links
 li.main-nav__item:hover {

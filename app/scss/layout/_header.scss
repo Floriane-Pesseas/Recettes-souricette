@@ -1,6 +1,7 @@
 .header {
     background-color: $pale-green;
 
+    //Header section main title with pictures
     &__title {
         width: 100%;
         display: flex;
@@ -11,15 +12,13 @@
         color: $dark-green;
         font-size: $large-font-size;
         background-color: $transparantize-green;
-        @media (min-height: $breakpoint-medium-tab) {
-
-            font-size: $extra-large-font-size;
-        }
-      
+        
+        //Header main title
         &__main {
             margin-top: 3%;
         }
 
+        //Header catch phrase
         &__second {
             font-size: $medium-font-size;
             font-family: $title-font;
@@ -28,24 +27,15 @@
             margin-bottom: 5%;
             background-color: $transparantize-green;
             padding-bottom: 5%;
-            @media (min-height: $breakpoint-medium-tab) {
-
-                font-size: $XL-font-size;
-            }
         }
     }
 
+    //Headings section: menu burger icon, button login and button suscribe
     &__headings {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        @media (min-height: $breakpoint-medium-tab) {
-            justify-content: flex-end;
         }
-    
-       
-        }
-        
         
     }
 
