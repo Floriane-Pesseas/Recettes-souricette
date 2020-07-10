@@ -72,12 +72,47 @@
     .footer{
         display: flex;
         flex-direction: column;
+        margin: 0%;
+        width: 100%;
+        background-color: $transparantize-green;
     }
+    //Section contact form and newsletter
     .contactform-newsletterform{
         visibility: visible !important;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+
+    //Links legal mentions and facebook
+    .links__list{
+        flex-direction: row !important;
+        justify-content: flex-end;
+        margin-top: 2rem !important;
+    }
+
+    //Icon Facebook
+    .fa{
+        font-size: $large-font-size;
+        margin-left: 1.5rem;
+        margin-top: 30% !important;
+    }
+}
+
+
+
+@media (min-height: $breakpoint-large-tab) {
+
+//HEADER
+.header {
+    
+    &__title__main{
+        font-size: $XXL-font-size;
+    }
+
+    &__title__second{
+        font-size: $extra-large-font-size;
+    }
+}
 }
 
