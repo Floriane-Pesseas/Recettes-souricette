@@ -1,62 +1,44 @@
-.contact-form{
-
-    margin: 5%;
- 
-    h3 {
-        display: none;
-    }
-    &__fields {
-        display: none;
-    }
-    
-    
-}
-
-.contact-form{
-    @media (min-height: $breakpoint-medium-tab) {
+@media (min-height: $breakpoint-medium-tab) {
+    .contact-form{
         display: flex;
         flex-direction: column;
-        margin: -10%;
+        width: 70%;
+        margin-left: -10%;
     }    
-}
 
-h3.contact-form__title{
-    @media (min-height: $breakpoint-medium-tab) {
+    h3.contact-form__title{
         font-size: $large-font-size;
-        display: flex;
         color: $dark-green;
-        margin-bottom: 4%;
+        display: flex;
+        margin-top: -10%;
+        margin-bottom: 10%;
     }
-}
 
-.contact-form__fields{
-    @media (min-height: $breakpoint-medium-tab) {
+    .contact-form__fields{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        
+        align-items: flex-start; 
     }
-}
 
-.contact-form__input{
-    @media (min-height: $breakpoint-medium-tab) {
-        width: 33%;
-        margin: 0.5%;
+    .contact-form__input {
+        width: 40%;
         padding: 0.5%;
         border: 2px solid;
         border-radius: 4px;
         font-family: $normal-font;
+        margin: 1%; 
     }
-}
 
-.contact-link{
-    @media (min-height: $breakpoint-medium-tab) {
+    //Links contact form and news letter invisible
+    .links__contact-form{
         display: none;
     }
-}
+
+    .links__newsletter{
+        display: none;
+    }
 
 .contact-form__button{
-    @media (min-height: $breakpoint-medium-tab) {
         margin-top:5%;
         margin-left:1%;
         border: none;
@@ -64,11 +46,10 @@ h3.contact-form__title{
         border-radius: 10%;
         box-shadow:4px 4px 8px #aaa;
 	    background:#fff;
-    }
 }
 
 #textarea {
-    @media (min-height: $breakpoint-medium-tab) {
         padding: 8%;
-    }  
+    
+}
 }

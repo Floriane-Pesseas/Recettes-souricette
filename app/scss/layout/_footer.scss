@@ -1,26 +1,35 @@
+//Footer in mobile version, list
 .footer {
 
     font-family: $normal-font;
     text-align: center;
     margin: 15%;
 
-    .links__legal_mentions {
-        margin: 5%;
+    .contactform-newsletterform {
+    visibility: hidden;
+    }
+    //List of links
+    .links__list {
+        margin-top: -30%;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    li {
+        margin: 2.5%;
     }
     
     a {
         text-decoration: none;
-        color: $very-dark-green;
-        
+        color: $very-dark-green;    
     }
 
     a:hover {
         color: $medium-green;
     }
+    
+    .fa {
+        margin-top: 10%;
+    }
 }
 
-.links__legal_mentions {
-    @media (min-height: $breakpoint-medium-tab) {
-    margin: 5%;
-}
-}

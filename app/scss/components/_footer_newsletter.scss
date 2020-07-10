@@ -28,9 +28,6 @@
 .newsletter__title { 
     @media (min-height: $breakpoint-medium-tab) {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: -50%;
     font-size: $large-font-size;
     color: $dark-green;
     }
@@ -39,10 +36,6 @@
 .newsletter__input{
     @media (min-height: $breakpoint-medium-tab) {
         display: flex;
-        margin-top: 3%;
-        margin-left: 75%;
-        width: 33%;
-        padding: 0.5%;
         border: 2px solid;
         border-radius: 4px;
         font-family: $normal-font;
@@ -52,8 +45,6 @@
 .newsletter__button{
     @media (min-height: $breakpoint-medium-tab) {
         display: flex;
-        margin-top:5%;
-        margin-left:80%;
         border: none;
         padding: 2%;
         border-radius: 10%;
