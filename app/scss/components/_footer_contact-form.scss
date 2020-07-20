@@ -1,4 +1,4 @@
-@media (min-height: $breakpoint-medium-tab) {
+@media (min-width: $breakpoint-medium-tab) {
     .contact-form{
         display: flex;
         flex-direction: column;

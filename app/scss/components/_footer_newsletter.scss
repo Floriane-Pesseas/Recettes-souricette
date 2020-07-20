@@ -14,20 +14,20 @@
 }
 
 .newsletter{
-    @media (min-height: $breakpoint-medium-tab) { 
+    @media (min-width: $breakpoint-medium-tab) { 
         margin-top: 10%;
         margin-right: 10%;
     }
 }
 //Make disappear the link to access news letter (in tablet)
 .newsletter-link  {
-    @media (min-height: $breakpoint-medium-tab) { 
+    @media (min-width: $breakpoint-medium-tab) { 
         display: none;
     }
 }
 //Newsletter title
 .newsletter__title { 
-    @media (min-height: $breakpoint-medium-tab) {
+    @media (min-width: $breakpoint-medium-tab) {
     display: flex;
     font-size: $large-font-size;
     color: $dark-green;
@@ -39,7 +39,7 @@
 
 //Newsletter section input and button
 .newsletter__suscribe {
-    @media (min-height: $breakpoint-medium-tab) {
+    @media (min-width: $breakpoint-medium-tab) {
         display: flex;
         flex-direction: row;
         } 
@@ -47,7 +47,7 @@
 
 //Newsletter input
 .newsletter__input{
-    @media (min-height: $breakpoint-medium-tab) {
+    @media (min-width: $breakpoint-medium-tab) {
         display: flex;
         border: 2px solid;
         border-radius: 4px;
@@ -56,14 +56,28 @@
     }
 }
 
+//Newsletter input
+.newsletter__input{
+    @media (min-width: $breakpoint-desktop) {
+        width: 20em;
+    }
+}
+
 //Newsletter button
 .newsletter__button{
-    @media (min-height: $breakpoint-medium-tab) {
+    @media (min-width: $breakpoint-medium-tab) {
         display: flex;
         border: none;
         padding: 3%;
         border-radius: 10%;
         box-shadow:4px 4px 8px #aaa;
 	    background:#fff;
+    }
+}
+//Newsletter button
+.newsletter__button{
+    @media (min-width: $breakpoint-desktop) {
+        width: 6rem;
+        font-size: 1em;
     }
 }

@@ -1,5 +1,5 @@
 
-@media (min-height: $breakpoint-medium-tab) {
+@media (min-width: $breakpoint-medium-tab) {
 
 //HEADER
 //Header main title with pictures    
@@ -31,7 +31,6 @@
             width: 100%;
             position: absolute;
             visibility: visible;
-            background-color: $pale-green;
 
             ul {
                 display: flex;
@@ -101,18 +100,37 @@
 
 
 
-@media (min-height: $breakpoint-large-tab) {
+@media (min-width: $breakpoint-large-tab) {
 
 //HEADER
 .header {
     
     &__title__main{
-        font-size: $extra-large-font-size;
+        font-size: $XXL-font-size;
     }
 
     &__title__second{
         font-size: $extra-large-font-size;
     }
+
+    .main-nav {
+        width: 100%;
+    }
 }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .header {
+        //Header main title
+        &__title__main {
+            font-size: $desktop-font-size;
+        }
+    }
+    //Icon Facebook
+    .fa{
+       margin-top: 55% !important;
+    }
+
+    
 }
 
