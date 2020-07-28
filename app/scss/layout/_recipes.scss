@@ -1,0 +1,29 @@
+//Category of recipe
+.recipe__category{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: $normal-font;
+    font-size: $medium-font-size;
+    color: $dark-green;
+    }
+
+//Type of recipes
+
+    a {
+        text-decoration: none;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    li.recipe__nav__item{
+        padding: 1%;
+        margin: 1%;
+        width: 50%;
+        background-color: $light-green;
+        font-family: $normal-font; 
+        border: solid 1.5px; 
+    }
