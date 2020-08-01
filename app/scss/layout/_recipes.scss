@@ -54,6 +54,8 @@ li.recipe__nav__item:hover{
 }
 
 //Recipes
+
+.recipes__articles{
 article{
     display: flex;
     flex-direction: row;
@@ -61,25 +63,22 @@ article{
     margin-right: 2%;
     margin-left: 2%;
     margin-bottom: 10%;
-
-//Title of recipes
-.recipes__articles__title {
-    font-size: $medium-font-size;
-    color: $dark-green;
-    margin-bottom: 3%;
 }
-
 //Paragraph
-
+p {
+    margin-bottom: 2%;
+}
 
 //Images of recipes
 img{
     width: 48%;
 }
-
-p {
-    margin-bottom: 2%;
 }
+//Title of recipes
+.recipes__articles__title {
+    font-size: $medium-font-size;
+    color: $dark-green;
+    margin-bottom: 3%;
 }
 
 //RESPONSIVE VERSION FOR TABLET AND DESKTOP

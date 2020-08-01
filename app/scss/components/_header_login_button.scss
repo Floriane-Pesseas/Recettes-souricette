@@ -10,7 +10,12 @@
         border-radius:12px 0 12px 0;
         background-color: $light-green;
         font-family: $normal-font;  
+        
     } 
+    a {
+        text-decoration: none;
+        color:#000000;
+    }
 }
 
 //Buttons "my account" and "suscribe" with hover
