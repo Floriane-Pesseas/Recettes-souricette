@@ -2,8 +2,8 @@
 .footer {
 
     font-family: $normal-font;
+    display: block;
     text-align: center;
-    margin: 15%;
 
     .contactform-newsletterform {
     visibility: hidden;
@@ -12,7 +12,6 @@
     .links__list {
         display: flex;
         flex-direction: column; 
-        margin-right: 10%;
     }
 
     li {

@@ -45,10 +45,11 @@
 @media (min-width: $breakpoint-medium-tab) {
     .welcome{
         font-size: $XL-font-size !important;
+        margin-top: 15%;
     }
 
     .my-recipe{
-        padding: 3%;
+        padding: 1%;
     }
     .my-recipes__title{
         font-size: $XL-font-size;
@@ -59,7 +60,15 @@
         margin-top: 4%;
     }
 
-    .fa{
+    .fa-eye{
+        font-size: $XXL-font-size;
+    }
+
+    .fa-edit{
+        font-size: $XXL-font-size;
+    }
+
+    .fa-trash{
         font-size: $XXL-font-size;
     }
 
