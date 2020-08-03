@@ -1,3 +1,4 @@
+//Title My account
 .account__title{
     margin-top: 10%;
     margin-bottom: 10%;
@@ -7,6 +8,7 @@
     color: $dark-green;
 }
 
+//Email and input field
 .account__email{
     text-align: center;
     margin-bottom: 5%;
@@ -16,9 +18,11 @@
         margin: auto;
         margin-bottom: 10%;
         padding: 1.3%;
+        border: solid;
     }
 }
 
+//Password and input field
 .account__password{
     text-align: center;
     margin-bottom: 5%;
@@ -28,6 +32,7 @@
         margin: auto;
         margin-bottom: 10%;
         padding: 1.3%;
+        border: solid;
     }
 }
 
@@ -37,4 +42,28 @@
     padding: 2%;
     display: block;
     margin: auto;
+    color: $dark-green;
+    border: solid;
+}
+
+//RESPONSIVE VERSION FOR TABLET AND DESKTOP
+@media (min-width: $breakpoint-medium-tab) {
+.account__title{
+    font-size: $XL-font-size;
+    margin-top: 25%;
+}
+
+.account__email{
+    font-size: $large-font-size;
+}
+
+.account__password{
+    font-size: $large-font-size;
+}
+
+.connect{
+    margin-bottom: 10%;
+    font-weight: bold;
+    font-size: $medium-font-size;
+}
 }
